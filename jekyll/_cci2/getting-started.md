@@ -7,6 +7,17 @@ categories: [getting-started]
 order: 41
 ---
 
+{%- capture github_icon -%}
+  {{ site.baseurl }}/assets/img/icons/companies/github-alt.svg
+{%- endcapture -%}
+
+{%- capture bitbucket_icon -%}
+  {{ site.baseurl }}/assets/img/icons/companies/bitbucket-alt.svg
+{%- endcapture -%}
+
+{% include vcs-banner.html githubPath=github_icon bitbucketPath=bitbucket_icon %}
+
+
 Follow this step-by-step guide to get your first successful green build on CircleCI using a GitHub repository.
 
 * TOC
