@@ -66,7 +66,7 @@
     "imagemin-cli": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
     "jest": "^27.3.1",
-    "markdownlint-cli2": "0.0.15",
+    "markdownlint-cli2": "0.11.0",
     "markdownlint-cli2-formatter-json": "0.0.4",
     "markdownlint-rule-header-id": "0.0.3",
     "mini-css-extract-plugin": "^2.4.3",
