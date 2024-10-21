@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: "Orb の手動オーサリングプロセス"
-description: "Orb 開発キットを使用せずに、シンプルな Orb を手動でオーサリングする方法を説明します。"
+title: "Orb の手動作成プロセス"
+description: "Orb 開発キットを使用せずに、シンプルな Orb を手動で作成する方法を説明します。"
 contentTags:
   platform:
     - クラウド
@@ -125,7 +125,7 @@ circleci orb validate /tmp/orb.yml
 circleci config process
 ```
 
-[`node`](https://circleci.com/developer/orbs/orb/circleci/node) Orb を使用する次の設定を例に考えてみましょう。
+下記の [`node`](https://circleci.com/developer/orbs/orb/circleci/node) を使用する設定を例に考えます。
 
 ```yml
 version: 2.1

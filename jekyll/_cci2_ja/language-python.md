@@ -1,16 +1,12 @@
 ---
 layout: classic-docs
 title: "CircleCI での Python アプリケーションの構成"
-short-title: "Python"
 description: "CircleCI 上での Python による継続的インテグレーション"
-categories:
-  - language-guides
-order: 7
 contentTags:
   platform:
     - クラウド
+    - Server v4.x
     - Server v3.x
-    - Server v2.x
 ---
 
 {% include snippets/language-guided-tour-cards.md lang="Python" demo_url_slug="python" demo_branch="main" guide_completion_time="15" sample_completion_time="10" %}
@@ -127,7 +123,7 @@ workflows:
 ### 5. ワークフローへのジョブの追加
 {: #add-jobs-to-the-workflow }
 
-完成したワークフロー、`build_test_deploy` を使用して `build_and_test` ジョブと `deploy` ジョブの実行をオーケストレーションします。 同時実行、順次実行、および手動承認ワークフローを使ったジョブのオーケストレーションの詳細については、[ワークフローを使ったジョブのスケジュール実行]({{site.baseurl}}/ja/workflows)を参照してください。
+完成したワークフロー、`build_test_deploy` を使用して `build_and_test` ジョブと `deploy` ジョブの実行をオーケストレーションします。 同時実行、順次実行、および手動承認ワークフローを使ったジョブのオーケストレーションの詳細については、[ワークフローを使ったジョブのオーケストレーション]({{site.baseurl}}/ja/workflows)を参照してください。
 
 ```yaml
 workflows:
@@ -197,3 +193,4 @@ workflows:
 - [Python Django テストでのテスト分割の使用]({{site.support_base_url}}/hc/en-us/articles/360048786831-Use-test-splitting-with-Python-Django-tests)
 - [Pytest を使った Flask フレームワークのテスト]({{site.blog_base_url}}/testing-flask-framework-with-pytest/)
 - [CircleCI で Django を使用する方法]({{site.support_base_url}}/hc/en-us/articles/115012795327-How-do-I-use-Django-on-CircleCI-)
+- チュートリアル: [パイプラインを高速化するためのテスト分割](/docs/ja/test-splitting-tutorial)
