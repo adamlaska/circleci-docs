@@ -1,52 +1,50 @@
 ---
 layout: classic-docs
 title: "config.yml のサンプルファイル"
-short-title: "config.yml のサンプルファイル"
 description: "config.yml のサンプルファイル"
-categories:
-  - 移行
-order: 2
 contentTags:
   platform:
     - クラウド
     - Server v4.x
     - Server v3.x
-    - Server v2.x
 suggested:
-  - 
+  -
     title: ダイナミックコンフィグの使用
     link: https://circleci.com/ja/blog/building-cicd-pipelines-using-dynamic-config/
-  - 
+  -
     title: Webhook の作成方法
     link: https://circleci.com/ja/blog/create-customizable-experiences-with-circleci-webhooks/
-  - 
+  -
     title: リリースの自動化
     link: https://circleci.com/blog/automating-your-releases-with-circleci-and-the-github-cli-orb/
-  - 
+  -
     title: Slack 通知のカスタマイズ
     link: https://support.circleci.com/hc/en-us/articles/360052728991-How-to-customize-your-Slack-messages-when-using-CircleCI-s-Slack-Orb
-  - 
+  -
     title: ローカル CLI を使用した設定のバリデーション
     link: https://support.circleci.com/hc/ja/articles/360006735753?input_string=configuration+error
-  - 
+  -
     title: 承認ベースのワークフローを使ったデプロイ
     link: https://circleci.com/blog/deploying-with-approvals/
 ---
 
-[`.circleci/config.yml`]({{ site.baseurl }}/ja/configuration-reference/) のサンプル ファイルをご紹介します。
+[`.circleci/config.yml`]({{site.baseurl}}/ja/configuration-reference/) のサンプルファイルをご紹介します。
 
-* 目次
-{:toc}
+CircleCI では **Visual Studio Code の拡張機能**を作成しました。一連の便利な機能により、Web アプリと Visual Studio Code 間のコンテキストの切り替え作業を減らすことができます。
 
-## シンプルな設定ファイル サンプル
+VS Code 拡張機能を使用すると、構文の検証、ハイライト、自動補完機能による提案をリアルタイムに実行でき、設定ファイルの作成や変更、およびトラブルシューティングにかかる時間を短縮できます。 CircleCI アカウントでこの拡張機能を認証すると、コードエディターから直接 CircleCI パイプラインを確認して管理したり、ワークフローのステータス変更の通知が可能になります。
+
+CircleCI VS Code の拡張機能は、[VS コードマーケットプレース](https://marketplace.visualstudio.com/items?itemName=circleci.circleci)からダウンロードできます。
+
+## シンプルな設定ファイルサンプル
 {: #simple-configuration-examples }
 
 ### 同時実行ワークフロー
 {: #concurrent-workflow }
 
-上記の例では、順次実行ワークフローを使用し、かつ `test` ジョブをマスター ブランチでのみ実行するよう設定しています。 ジョブ制御の同時実行化、シーケンシャル化、もしくは承認して処理を続行するワークフローについて、詳しくは[ワークフローに関するページ]({{ site.baseurl }}/ja/workflows)を参照してください。
+上記の例では、順次実行ワークフローを使用し、かつ `test` ジョブをマスター ブランチでのみ実行するよう設定しています。 同時実行、順序化、およびワークフローの手動承認機能を使ったジョブの実行のオーケストレーションの詳細は、[ワークフロー]({{ site.baseurl }}/ja/workflows)のドキュメントを参照してください。
 
-次の図に、以下の設定ファイル サンプルのワークフロー ビューを示します。 ![同時実行ワークフローのグラフ]({{ site.baseurl }}/assets/img/docs/concurrent-workflow-map.png)
+下記設定ファイルサンプルのワークフロービューを示します。 ![同時実行ワークフローのグラフ]({{ site.baseurl }}/assets/img/docs/concurrent-workflow-map.png)
 
 {:.tab.basic-concurrent.Cloud}
 ```yaml
@@ -1212,7 +1210,7 @@ jobs:
 
   build-macos:
     macos:
-      xcode: 12.5.1
+      xcode: 14.2.0
     parameters:
       label:
         type: string
@@ -1314,7 +1312,7 @@ jobs:
 
   test-macos:
     macos:
-      xcode: 12.5.1
+      xcode: 14.2.0
     parameters:
       label:
         type: string
@@ -1388,7 +1386,7 @@ version: 2.1
 jobs:
   build-and-test:
     macos:
-      xcode: 12.5.1
+      xcode: 14.2.0
     steps:
       - checkout
       - run:
@@ -1447,5 +1445,5 @@ workflows:
 {:.no_toc}
 
 * このページのサンプルで扱った各コンセプトの詳細については、[コンセプトに関するページ]({{ site.baseurl }}/ja/concepts/#configuration)および[ワークフローに関するページ]({{ site.baseurl }}/ja/workflows/)を参照してください。
-* 個々の構成キーの詳細については、[設定ファイルのリファレンス ページ]({{ site.baseurl }}/ja/configuration-reference/)を参照してください。
-* CircleCI を使用するパブリック プロジェクトの一覧については、「[パブリック リポジトリの例]({{ site.baseurl }}/ja/example-configs/)」を参照してください。
+* 個々の設定キーの詳細については、[設定ファイルのリファレンス]({{ site.baseurl }}/ja/configuration-reference/)を参照してください。
+* CircleCI を使用するパブリックプロジェクトの一覧については、[パブリックリポジトリの例]({{ site.baseurl }}/ja/example-configs/) を参照してください。

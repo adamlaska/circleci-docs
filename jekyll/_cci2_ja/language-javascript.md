@@ -1,17 +1,12 @@
 ---
 layout: classic-docs
 title: "CircleCI での Node.js アプリケーションの設定"
-short-title: "JavaScript"
 description: "CircleCI  での JavaScript と Node.js を使用したビルドとテスト"
-categories:
-  - language-guides
-order: 5
 contentTags:
   platform:
     - クラウド
     - Server v4.x
     - Server v3.x
-    - Server v2.x
 ---
 
 {% include snippets/language-guided-tour-cards.md lang="Node.JS" demo_url_slug="javascript" demo_branch="master" guide_completion_time="15" sample_completion_time="10" %}
@@ -155,7 +150,7 @@ workflows:
 ### 4.  ワークフローへのジョブの追加
 {: #add-jobs-to-the-workflow }
 
-完成したワークフロー、`build_test_deploy` を使用して `build_and_test` ジョブと `deploy` ジョブの実行をオーケストレーションします。 同時実行、順次実行、および手動承認ワークフローを使ったジョブのオーケストレーションの詳細については、[ワークフローを使ったジョブのスケジュール実行]({{site.baseurl}}/ja/workflows)を参照してください。
+完成したワークフロー、`build_test_deploy` を使用して `build_and_test` ジョブと `deploy` ジョブの実行をオーケストレーションします。 同時実行、順次実行、および手動承認ワークフローを使ったジョブのオーケストレーションの詳細については、[ワークフローを使ったジョブのオーケストレーション]({{site.baseurl}}/ja/workflows)を参照してください。
 
 ```yaml
 workflows:
@@ -226,6 +221,7 @@ workflows:
 ## 関連項目
 {: #see-also-new }
 
-- [Node アプリの Heroku への継続的デプロイ]({{site.blog_base_url}}/ja/continuous-deployment-to-heroku/)
-- [Node.js の Azure VM への継続的デプロイ]({{site.blog_base_url}}/ja/cd-azure-vm/)
+- [Node アプリの Heroku への継続的デプロイ](https://circleci.com/ja/blog/continuous-deployment-to-heroku/)
+- [Node.js の Azure VM への継続的デプロイ]({{site.blog_base_url}}/cd-azure-vm/)
 - [Node.js のビルドとテストスイートのタイムアウトのトラブルシューティング]({{site.support_base_url}}/hc/en-us/articles/360038192673-NodeJS-Builds-or-Test-Suites-Fail-With-ENOMEM-or-a-Timeout)
+- チュートリアル: [パイプラインを高速化するためのテスト分割](/docs/ja/test-splitting-tutorial)

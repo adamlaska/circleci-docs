@@ -20,32 +20,59 @@ en:
       - 
         children:
           - 
+            name: 設定のチュートリアル
+            link: コンフィグの概要
           - 
+            name: クイックスタートガイド
             link: はじめよう
           - 
+            name: Hello World
+            link: Hello World
           - 
+            name: Slack Orb の設定
+            link: Slack Orb のチュートリアル
       - 
         name: VCS との連携
         children:
           - 
             name: GitHub
+            link: GitHub との連携
           - 
             name: Bitbucket
+            link: bitbucket との連携
           - 
             name: GitLab
+            link: gitLab との連携
       - 
         name: 移行
         children:
           - 
+            name: CircleCI への移行ガイド
+            link: 移行の概要
           - 
+            name: AWS からの移行
+            link: AWS からの移行
           - 
+            name: Azure DevOps からの移行
+            link: Azure DevOps からの移行
           - 
+            name: Buildkite からの移行
+            link: buildkite からの移行
           - 
+            name: Github Actions からの移行
+            link: GitHub からの移行
           - 
+            name: GitLab からの移行
+            link: GitLab からの移行
           - 
             name: Jenkins からの移行
+            link: Jenkins からの移行
           - 
+            name: TeamCity からの移行
+            link: TeamCity からの移行
           - 
+            name: Travis CI からの移行
+            link: Travis からの移行
   - 
     name: パイプライン
     icon: icons/sidebar/pipelines.svg
@@ -54,18 +81,26 @@ en:
         name: 会社概要
         children:
           - 
+            name: パイプラインの概要
             link: パイプライン
           - 
+            name: トリガーの概要
+            link: トリガーの概要
           - 
+            name: パイプラインのスキップとキャンセル
+            link: ビルドのスキップ
       - 
         name: 機能
         children:
           - 
             name: パイプラインのスケジューリング
+            link: パイプラインのスケジュール実行
           - 
             name: ワークフロー
             link: workflows
           - 
+            name: ジョブとステップ
+            link: ジョブとステップ
           - 
             name: ワークスペース
             link: ワークスペース
@@ -79,7 +114,7 @@ en:
             name: 同時実行
             link: 同時実行件数
           - 
-            name: 環境変数
+            name: 環境変数の概要
           - 
             name: テストデータの収集
           - 
@@ -87,10 +122,6 @@ en:
             name: SSH を使用したデバッグ
           - 
             name: テスト分割と並列実行
-          - 
-          - 
-            name: コンテキスト
-            link: コンテキスト
           - 
           - 
       - 
@@ -107,8 +138,18 @@ en:
             name: キャッシュ戦略
           - 
             name: パイプライン値とパラメーター
-          - 
       - 
+        children:
+          - 
+          - 
+          - 
+            name: スケジュール実行化したワークフローをパイプラインのスケジュール実行に移行
+          - 
+            name: パイプラインのスケジュール実行を夜間に設定する
+          - 
+            name: 複数のワークフローを使ったパイプラインのスケジュール実行
+          - 
+            name: CircleCI CLI を使用したテスト分割
       - 
         name: チュートリアル
         children:
@@ -122,7 +163,8 @@ en:
         name: 会社概要
         children:
           - 
-            name: はじめに
+            name: 実行環境の概要
+          - 
           - 
       - 
         name: Docker
@@ -156,6 +198,7 @@ en:
           - 
             name: Windows の使用
           - 
+            name: Hello World
       - 
         name: GPU
         children:
@@ -167,6 +210,10 @@ en:
         name: セルフホストランナー
       - 
         name: コンテナランナー
+        children:
+          - 
+          - 
+            link: container-runner
       - 
         name: マシンランナー
         children:
@@ -177,7 +224,7 @@ en:
           - 
             name: CircleCI Server 上のマシンランナーのアップグレード
           - 
-            name: マシンランナーの設定のリファレンス
+            name: マシンランナーの設定ファイルのリファレンス
   - 
     name: 設定ファイル入門ガイド
     icon: icons/sidebar/configure.svg
@@ -187,13 +234,14 @@ en:
         children:
           - 
             name: 設定ガイド
+            link: コンフィグの概要
           - 
           - 
       - 
         name: 参考情報
         children:
           - 
-            name: 設定のリファレンス
+            name: 設定ファイルのリファレンス
           - 
           - 
             name: 高度な設定
@@ -201,36 +249,50 @@ en:
             name: JavaScript Node のデモ プロジェクトのビルド
           - 
       - 
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: 組織名とリポジトリ名の変更
+          - 
   - 
-    name: Orbs
     icon: icons/sidebar/orbs.svg
     children:
       - 
         name: Orb の使用
-        children:
-          - 
-          - 
-          - 
-            name: Orb に関するよくあるご質問
       - 
-        name: Orb のオーサリング
         children:
           - 
           - 
           - 
-          - 
-          - 
-          - 
-            name: Orb のパブリッシュプロセス
           - 
             name: Orb 開発キット
+      - 
+      - 
+        children:
           - 
+            name: Orb のパブリッシュプロセス
       - 
         name: チュートリアル
         children:
           - 
+          - 
             name: Slack Orb の使用
+            link: Slack Orb のチュートリアル
       - 
+      - 
+        name: 参考情報
+        children:
+          - 
+          - 
+            name: Orb に関するよくあるご質問
+          - 
+          - 
+            name: 設定ファイルのリファレンス
+          - 
   - 
     name: インサイト
     icon: icons/sidebar/insights.svg
@@ -281,12 +343,23 @@ en:
         name: security
         children:
           - 
-            link: security
           - 
-            name: セキュリティーに関する推奨事項
+            name: コンテキスト
+            link: コンテキスト
           - 
+            name: シークレットの安全な取り扱い
+          - 
+          - 
+            name: サプライチェーン攻撃への対策
           - 
             name: IP アドレスの範囲機能
+          - 
+          - 
+            name: 監査ログ
+            link: audit-logs
+          - 
+            name: CircleCI のセキュリティ対策
+            link: security
       - 
   - 
     icon: icons/sidebar/examples.svg
@@ -339,7 +412,7 @@ en:
       - 
         children:
           - 
-            name: 設定のリファレンス
+            name: 設定ファイルのリファレンス
           - 
             link: https://circleci.com/docs/api/v2
           - 
@@ -349,8 +422,6 @@ en:
           - 
           - 
             name: プロジェクトの値と変数
-          - 
-            name: 定義済み環境変数
           - 
             link: circleci-images
           - 
@@ -610,11 +681,14 @@ ja:
       - 
         children:
           - 
+            name: 設定のチュートリアル
           - 
+            name: クイックスタートガイド
           - 
             name: Hello World
             i18n_name: Hello World
           - 
+            name: Slack Orb の設定
       - 
         name: VCS との統合
         children:
@@ -629,15 +703,23 @@ ja:
         i18n_name: Nomadメトリクス
         children:
           - 
+            name: CircleCI への移行ガイド
           - 
+            name: AWS からの移行
           - 
+            name: Azure DevOps からの移行
           - 
+            name: Buildkite からの移行
           - 
+            name: Github Actions からの移行
           - 
+            name: GitLab からの移行
           - 
             name: Jenkins からの移行
           - 
+            name: TeamCity からの移行
           - 
+            name: Travis CI からの移行
   - 
     name: パイプライン
     icon: icons/sidebar/pipelines.svg
@@ -645,6 +727,13 @@ ja:
       - 
         name: 概要
         i18n_name: v2.19の新機能
+        children:
+          - 
+            name: パイプラインの概要
+          - 
+            name: トリガーの概要
+          - 
+            name: パイプラインのスキップとキャンセル
       - 
         name: 機能
         children:
@@ -653,6 +742,7 @@ ja:
           - 
             name: ワークフロー
           - 
+            name: ジョブとステップ
           - 
             name: ワークスペース
           - 
@@ -672,9 +762,6 @@ ja:
             name: テスト分割と並列実行
           - 
           - 
-            name: コンテキスト
-          - 
-          - 
       - 
         name: 最適化
         children:
@@ -688,8 +775,16 @@ ja:
             name: キャッシュ戦略
           - 
             name: パイプライン値とパラメーター
-          - 
       - 
+        children:
+          - 
+          - 
+          - 
+            name: ワークフローのスケジュール実行からパイプラインのスケジュール実行への移行
+          - 
+            name: パイプラインのスケジュール実行を夜間に設定する
+          - 
+            name: 複数のワークフローを使ったパイプラインのスケジュール実行
       - 
         name: チュートリアル
         children:
@@ -769,7 +864,7 @@ ja:
           - 
             name: CircleCI Server 上のマシンランナーのアップグレード
           - 
-            name: マシンランナーの設定のリファレンス
+            name: マシンランナーの設定ファイルのリファレンス
   - 
     name: 設定ファイル
     icon: icons/sidebar/configure.svg
@@ -786,7 +881,7 @@ ja:
         name: 参考情報
         children:
           - 
-            name: 設定のリファレンス
+            name: 設定ファイルのリファレンス
           - 
           - 
             name: 高度な設定
@@ -872,10 +967,19 @@ ja:
         children:
           - 
           - 
-            name: セキュリティーに関する推奨事項
+            name: コンテキスト
           - 
+            name: シークレットの安全な取り扱い
+          - 
+          - 
+            name: サプライチェーン攻撃への対策
           - 
             name: IP アドレスの範囲機能
+          - 
+          - 
+            name: 監査ログ
+          - 
+            name: CircleCI のセキュリティ対策
       - 
         children:
           - 
@@ -934,7 +1038,7 @@ ja:
       - 
         children:
           - 
-            name: 設定に関するリファレンス
+            name: 設定ファイルのリファレンス
           - 
             name: API v2
             link: https://circleci.com/docs/api/v2
@@ -947,8 +1051,6 @@ ja:
           - 
           - 
             name: プロジェクトの値と変数
-          - 
-            name: 定義済み環境変数
           - 
           - 
             name: 用語集
